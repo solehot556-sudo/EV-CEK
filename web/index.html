@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>VoltMotor — Katalog EV Indonesia</title>
+  <meta name="description" content="Katalog motor listrik Indonesia dengan iPhone Liquid Glass UI, perbandingan Duel EV, Kalkulator Hemat, dan akses penuh offline." />
+  <meta name="theme-color" content="#0A1124" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="VoltMotor" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/icon-192.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="glass-backdrop" aria-hidden="true">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+
+  <!-- Full-width viewport: konten tetap full, kapsul kaca melayang ultra-transparan di sisi kanan -->
+  <main id="app-content" class="app-main" role="main"></main>
+
+  <!-- Right-Side Floating iPhone Liquid Glass Tab Rail -->
+  <nav id="right-glass-rail" class="right-glass-rail" aria-label="Navigasi Utama VoltMotor">
+    <button id="quick-theme-btn" class="rail-theme-btn" type="button" aria-label="Ubah Mode Gelap atau Terang" title="Mode Gelap / Terang">
+      <span id="quick-theme-icon">☀️</span>
+    </button>
+    <div class="rail-divider"></div>
+    <div class="rail-tabs-wrap">
+      <div id="rail-droplet" class="rail-droplet" aria-hidden="true"></div>
+      <button class="rail-tab active" data-tab="catalog" type="button">
+        <span class="rail-icon">🛵</span>
+        <span class="rail-label">Katalog</span>
+      </button>
+      <button class="rail-tab" data-tab="compare" type="button">
+        <span class="rail-icon">⚡<span id="compare-badge" class="rail-badge">2</span></span>
+        <span class="rail-label">Duel EV</span>
+      </button>
+      <button class="rail-tab" data-tab="calculator" type="button">
+        <span class="rail-icon">🧮</span>
+        <span class="rail-label">Hitung</span>
+      </button>
+      <button class="rail-tab" data-tab="advisor" type="button">
+        <span class="rail-icon">✨</span>
+        <span class="rail-label">Asisten</span>
+      </button>
+      <button class="rail-tab" data-tab="settings" type="button">
+        <span class="rail-icon">⚙️</span>
+        <span class="rail-label">Setelan</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Modal Sheet untuk Detail EV & Pemilih Motor Duel -->
+  <div id="modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div id="modal-sheet" class="modal-sheet glass-card"></div>
+  </div>
+
+  <script src="/data.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

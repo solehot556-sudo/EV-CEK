@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">VoltMotor</string>
+    <string name="hero_title">Katalog Motor Listrik</string>
+    <string name="hero_subtitle">Data real-time &amp; offline dari cekmotorlistrik.com</string>
+    <string name="tab_catalog">Katalog</string>
+    <string name="tab_compare">Bandingkan</string>
+    <string name="tab_calculator">Kalkulator</string>
+    <string name="tab_settings">Pengaturan</string>
+    <string name="sync_online">Tersinkronisasi</string>
+    <string name="sync_syncing">Menyinkronkan...</string>
+    <string name="sync_offline">Mode Offline</string>
+    <string name="sync_error">Cache Offline Aktif</string>
+    <string name="search_placeholder">Cari merek atau model (mis. Polytron, ALVA)...</string>
+    <string name="filter_all_types">Semua Tipe</string>
+    <string name="empty_catalog_title">Tidak ada model yang cocok</string>
+    <string name="empty_catalog_desc">Coba longgarkan filter harga, jarak tempuh, atau kata kunci pencarian Anda.</string>
+    <string name="reset_filters">Reset Filter</string>
+</resources>

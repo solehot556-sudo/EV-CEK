@@ -1,0 +1,6 @@
+{
+  "name": "VoltMotor",
+  "description": "Katalog motor & sepeda listrik Indonesia dengan data cekmotorlistrik.com, database offline Room, sinkronisasi otomatis, filter tipe/harga/jarak tempuh, glass UI, dan mode gelap.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
